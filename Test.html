@@ -1,9 +1,73 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>First Creation</title>
-    <body>
-        Heading test 
-    </body>
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Centered NavBar</title>
+  <style>
+    /* Reset default margins and paddings */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0f0f0f;
+      color: white;
+    }
+
+    /* Nav styles */
+    nav {
+      background-color: #1c1c1c;
+      padding: 1rem 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: #ccc;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links li a:hover,
+    .nav-links li.active a {
+      color: #00ffd0;
+    }
+
+    .content {
+      text-align: center;
+      padding: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul class="nav-links">
+      <li class="active"><a href="index.html">The Beginning</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page Content -->
+  <section class="content">
+    <h1>Welcome to My Portfolio</h1>
+    <p>This is a clean and simple nav bar with centered links. Scroll or explore below!</p>
+  </section>
+
+</body>
 </html>
