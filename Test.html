@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -15,20 +14,21 @@
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #0f0f0f;
+      background: url('images/Cybersec_3.jpg') no-repeat center center fixed;
+      background-size: cover;
       color: white;
     }
 
     /* Nav styles */
     nav {
-      background-color: #1c1c1c;
+      background-color: rgba(28, 28, 28, 0.85); /* Slight transparency over image */
       padding: 1rem 0;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
     }
 
     .nav-links {
       display: flex;
-      justify-content: center; /* Center horizontally */
+      justify-content: center;
       gap: 2rem;
       list-style: none;
     }
@@ -48,6 +48,10 @@
     .content {
       text-align: center;
       padding: 3rem;
+      background-color: rgba(0, 0, 0, 0.6); /* optional dark overlay for readability */
+      border-radius: 8px;
+      max-width: 700px;
+      margin: 3rem auto;
     }
   </style>
 </head>
@@ -71,3 +75,4 @@
 
 </body>
 </html>
+
