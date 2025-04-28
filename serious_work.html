@@ -7,15 +7,42 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body class="bg-black text-white font-sans">
+<body class="bg-white text-black font-sans">
   <script>AOS.init();</script>
 
+  <!-- Navigation Bar -->
+  <nav class="bg-gray-900 text-white py-4">
+    <ul class="flex justify-center space-x-8 text-lg">
+      <li class="font-semibold underline"><a href="index.html">The Beginning</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  
   <!-- Hero Section -->
-  <section class="h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('images/Cybersec_3.jpg');">
-    <div class="text-center bg-black bg-opacity-50 p-8 rounded-lg">
+  <section class="h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('images/CYBERSEC_1.jpg');">
+    <div class="text-center bg-black bg-opacity-50 p-8 rounded-lg text-white">
       <h1 class="text-4xl font-bold mb-4">Hi, I'm Mark Gitonga</h1>
-      <p class="text-lg italic">Driven by curiosity, grounded in cybersecurity, passionate about solving real-world problems.</p>
+      <p class="mb-4">
+        “Maybe the world doesn’t change in riots or revolutions. 
+        Maybe it shifts when one person chooses to live without a mask, even when it’s safer to 
+        disappear. Every time we show up as ourselves in a place that tells us not to, a 
+        fracture appears in the illusion. And if enough of us do it, that illusion—of control, 
+        of perfection, of sameness—starts to collapse. The truth doesn’t always shout. 
+        Sometimes it just refuses to sit down.”
+      </p>
+      <em>~Elliot Alderson, <span class="italic">Mr. Robot</span>~</em>
+  
+      <!-- Social Icons -->
+      <ul class="flex justify-center gap-6 mt-6 text-2xl">
+        <li><a href="https://medium.com/@I_0wn_y0u" class="text-white hover:text-gray-400" target="_blank" aria-label="Medium"><i class="fab fa-medium"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/mark-gitonga-02075326b/" class="text-white hover:text-blue-500" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/Markg001" class="text-white hover:text-gray-300" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://x.com/MarkGitonga20?s=08" class="text-white hover:text-blue-400" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+      </ul>
     </div>
   </section>
 
@@ -37,8 +64,8 @@
       <img src="images/Cybersec_3.jpg" alt="Cybersecurity" class="w-full md:w-1/2 rounded" />
       <div>
         <h2 class="text-3xl font-bold mb-2">Cybersecurity</h2>
-        <p class="italic text-gray-300 mb-4">"Cybersecurity isn't about building walls—it’s about learning to dance with shadows and listening for silence in the noise."</p>
-        <p class="text-gray-200">In a world silently humming with data, Mark, a once-anonymous cybersecurity analyst, discovered an anomaly hidden deep within a multinational's network...</p>
+        <p class="italic text-black-300 mb-4">"Cybersecurity isn't about building walls—it’s about learning to dance with shadows and listening for silence in the noise."</p>
+        <p class="text-black-200">In a world silently humming with data, Mark, a once-anonymous cybersecurity analyst, discovered an anomaly hidden deep within a multinational's network...</p>
         <div class="mt-4">
           <a href="page2/cybersecurity.html" class="bg-blue-600 px-4 py-2 rounded hover:bg-blue-800 transition">Full Story</a>
         </div>
@@ -84,7 +111,7 @@
   </section>
 
   <!-- Contact Form -->
-  <section class="bg-gray-900 py-12 px-4">
+  <section id="contact" class="bg-gray-900 py-12 px-4">
     <h2 class="text-2xl text-center font-bold mb-8">Get in Touch</h2>
     <form action="mailto:youremail@example.com" method="POST" enctype="text/plain" class="max-w-2xl mx-auto grid gap-6">
       <input type="text" name="name" placeholder="Your Name" class="p-3 rounded bg-gray-800 border border-gray-700" required>
@@ -94,9 +121,44 @@
     </form>
   </section>
 
+
   <!-- Footer -->
-  <footer class="text-center py-6 text-sm text-gray-400">
-    &copy; 2025 Mark Gitonga | All rights reserved.
+  <footer class="bg-gray-900 text-gray-300 py-10">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10">
+      
+      <!-- Email Section -->
+      <div>
+        <h3 class="text-xl font-semibold text-white mb-2">Email</h3>
+        <p class="text-gray-400 hover:text-white transition duration-300">
+          <a href="mailto:mrkgitonga387@gmail.com">mrkgitonga387@gmail.com</a>
+        </p>
+      </div>
+  
+      <!-- Social Media Section -->
+      <div>
+        <h3 class="text-xl font-semibold text-white mb-2">Social Media</h3>
+        <div class="flex space-x-6 mt-2 text-2xl">
+          </a>
+          <a href="https://medium.com/@I_0wn_y0u" target="_blank" class="text-gray-400 hover:text-white transition duration-300" aria-label="Medium">
+            <i class="fab fa-medium"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/mark-gitonga-02075326b/" target="_blank" class="text-gray-400 hover:text-blue-500 transition duration-300" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/Markg001" target="_blank" class="text-gray-400 hover:text-white transition duration-300" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+            <a href="https://x.com/MarkGitonga20?s=08" target="_blank" class="text-gray-400 hover:text-blue-400 transition duration-300" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Bottom Section -->
+    <div class="mt-10 text-center text-sm text-gray-500">
+      © 2025 Mark Gitonga. All rights reserved.
+    </div>
   </footer>
+
 </body>
 </html>
