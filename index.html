@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cybersecurity Hero Section</title>
+  <title>Mark_Gitonga_Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
   <script>AOS.init();</script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
 
 
   <!-- Tailwind CDN -->
@@ -31,15 +33,19 @@
     }
 
     .content {
-      position: absolute;
-      top: 20%;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 1;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-    }
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  max-width: 90%;
+  width: 100%;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
 
     .below-section {
       padding: 2rem;
@@ -65,15 +71,52 @@
   </div>
 </nav>
 
+
   <!-- Particle Hero Section -->
   <div id="tsparticles">
-    <div class="content">
-      <h1 class="text-4xl font-bold mb-4">Welcome to My Cybersecurity Page</h1>
-      <p class="text-xl">Secure. Defend. Innovate.</p>
+    <div class="content text-center" style="max-width: 80%; margin: 0 auto;">
+      <h1 class="text-4xl font-bold mb-4">Welcome to my digital space</h1>
+      <p class="text-xl mb-6">There’s more than just code here; there’s a story of resilience, growth, and purpose.
+         Every script I write and every system I secure is a reflection of my journey — 
+         from humble beginnings to shaping tech solutions that matter. As you explore, you’ll 
+         find not just projects, but a mindset committed to learning, adapting, and pushing 
+         boundaries</p>
+  
+      <!-- Social Media Icons in White -->
+      <div class="flex justify-center space-x-6 text-2xl">
+        <!-- Medium -->
+        <a href="https://medium.com/@I_0wn_y0u" target="_blank" aria-label="Medium">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 1043.63 592.71" class="w-6 h-6 text-white hover:text-blue-400 transition duration-300">
+            <g>
+              <circle cx="173.74" cy="296.35" r="175.67"/>
+              <ellipse cx="519.52" cy="296.35" rx="138.56" ry="175.67"/>
+              <ellipse cx="865.28" cy="296.35" rx="103.63" ry="175.67"/>
+            </g>
+          </svg>
+        </a>
+  
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/mark-gitonga-02075326b/" target="_blank" class="text-white hover:text-blue-500 transition duration-300" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+  
+        <!-- GitHub -->
+        <a href="https://github.com/Markg001" target="_blank" class="text-white hover:text-blue-400 transition duration-300" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+  
+        <!-- X (formerly Twitter) -->
+        <a href="https://x.com/MarkGitonga20?s=08" target="_blank" aria-label="X (formerly Twitter)">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="currentColor" class="w-6 h-6 text-white hover:text-blue-400 transition duration-300">
+            <path d="M29.2,19.6h19.2l20.8,27.4L89.6,19.6h19.2L78.4,55.6l30.4,44.8H89.6L67.6,71.6l-23.2,28.8H25.6l32-39.2L29.2,19.6z"/>
+          </svg>
+        </a>
+      </div>
     </div>
   </div>
   
- <!-- Scrollable Sections -->
+  
+
   <section class="bg-white py-16">
     <div class="text-center mb-10">
       <h2 class="text-4xl font-bold">My Skills</h2>
@@ -82,50 +125,151 @@
   
     <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
       
-      <!-- Cybersecurity -->
+    <!-- Cybersecurity -->
+    <a href="Cyber_Security.html" class="block group">
       <div class="text-center p-6 shadow-lg rounded-lg hover:shadow-xl transition">
-        <img src="images/Cybersec_3.jpg" alt="Cybersecurity" class="w-full h-40 object-cover rounded-md">
+        <div class="relative w-full h-40">
+          <img src="images/Cybersec_3.jpg" alt="Cybersecurity" class="w-full h-full object-cover rounded-md">
+          <div class="absolute inset-0 bg-black bg-opacity-50 rounded-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <span class="text-white text-sm font-semibold">Read More</span>
+          </div>
+        </div>
         <h3 class="text-xl font-semibold mt-4">Cybersecurity</h3>
         <p class="text-sm text-gray-600 mt-2">Dancing with shadows and listening for silence in the noise.</p>
       </div>
+    </a>
+
   
       <!-- Data Analysis -->
-      <div class="text-center p-6 shadow-lg rounded-lg hover:shadow-xl transition">
-        <img src="images/Data_Analysis.jpg" alt="Data Analysis" class="w-full h-40 object-cover rounded-md">
-        <h3 class="text-xl font-semibold mt-4">Data Analysis</h3>
-        <p class="text-sm text-gray-600 mt-2">Listening to the universe through numbers and patterns.</p>
+<a href="Data_Analysis.html" class="block group">
+  <div class="text-center p-6 shadow-lg rounded-lg hover:shadow-xl transition">
+    <div class="relative w-full h-40 overflow-hidden">
+      <img src="images/Data_Analysis.jpg" alt="Data Analysis" class="w-full h-full object-cover rounded-md transform group-hover:scale-95 transition-transform duration-300">
+      <div class="absolute inset-0 bg-black bg-opacity-50 rounded-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <span class="text-white text-sm font-semibold">Read More</span>
+      </div>
+    </div>
+    <h3 class="text-xl font-semibold mt-4">Data Analysis</h3>
+    <p class="text-sm text-gray-600 mt-2">Listening to the universe through numbers and patterns.</p>
+  </div>
+</a>
+
+<!-- Blog -->
+<a href="Blog.html" class="block group">
+  <div class="text-center p-6 shadow-lg rounded-lg hover:shadow-xl transition">
+    <div class="relative w-full h-40 overflow-hidden">
+      <img src="images/Blog.png" alt="Blog" class="w-full h-full object-cover rounded-md transform group-hover:scale-95 transition-transform duration-300">
+      <div class="absolute inset-0 bg-black bg-opacity-50 rounded-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <span class="text-white text-sm font-semibold">Read More</span>
+      </div>
+    </div>
+    <h3 class="text-xl font-semibold mt-4">Blog</h3>
+    <p class="text-sm text-gray-600 mt-2">Decoding secrets, one post at a time.</p>
+  </div>
+</a>
+
+<!-- Projects -->
+<a href="Project.html" class="block group">
+  <div class="text-center p-6 shadow-lg rounded-lg hover:shadow-xl transition">
+    <div class="relative w-full h-40 overflow-hidden">
+      <img src="images/Project.jpg" alt="Projects" class="w-full h-full object-cover rounded-md transform group-hover:scale-95 transition-transform duration-300">
+      <div class="absolute inset-0 bg-black bg-opacity-50 rounded-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <span class="text-white text-sm font-semibold">Read More</span>
+      </div>
+    </div>
+    <h3 class="text-xl font-semibold mt-4">Projects</h3>
+    <p class="text-sm text-gray-600 mt-2">Turning curiosity into creation and impact.</p>
+  </div>
+</a>
+
+<!-- DevOps -->
+<a href="DevOps.html" class="block group">
+  <div class="text-center p-6 shadow-lg rounded-lg hover:shadow-xl transition">
+    <div class="relative w-full h-40 overflow-hidden">
+      <img src="images/Dev_0ps.jpg" alt="DevOps" class="w-full h-full object-cover rounded-md transform group-hover:scale-95 transition-transform duration-300">
+      <div class="absolute inset-0 bg-black bg-opacity-50 rounded-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <span class="text-white text-sm font-semibold">Read More</span>
+      </div>
+    </div>
+    <h3 class="text-xl font-semibold mt-4">DevOps</h3>
+    <p class="text-sm text-gray-600 mt-2">Culture, speed, trust — delivered continuously.</p>
+  </div>
+</a>
+
+<!-- Artificial Intelligence -->
+<a href="Artificial_Intelligence.html" class="block group">
+  <div class="text-center p-6 shadow-lg rounded-lg hover:shadow-xl transition">
+    <div class="relative w-full h-40 overflow-hidden">
+      <img src="images/AI.jpg" alt="AI" class="w-full h-full object-cover rounded-md transform group-hover:scale-95 transition-transform duration-300">
+      <div class="absolute inset-0 bg-black bg-opacity-50 rounded-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <span class="text-white text-sm font-semibold">Read More</span>
+      </div>
+    </div>
+    <h3 class="text-xl font-semibold mt-4">Artificial Intelligence</h3>
+    <p class="text-sm text-gray-600 mt-2">Teaching machines to dream and predict tomorrow.</p>
+  </div>
+</a>
+
+  </section>  
+
+   <!-- Contact Form -->
+   <section id="contact" class="bg-gray-900 py-12 px-4">
+    <h2 class="text-2xl text-center font-bold mb-8">Get in Touch</h2>
+    <form action="mailto:youremail@example.com" method="POST" enctype="text/plain" class="max-w-2xl mx-auto grid gap-6">
+      <input type="text" name="name" placeholder="Your Name" class="p-3 rounded bg-gray-800 border border-gray-700" required>
+      <input type="email" name="email" placeholder="Your Email" class="p-3 rounded bg-gray-800 border border-gray-700" required>
+      <textarea name="message" rows="5" placeholder="Your Message" class="p-3 rounded bg-gray-800 border border-gray-700" required></textarea>
+      <button type="submit" class="bg-blue-500 py-3 rounded hover:bg-blue-700 transition">Send Message</button>
+    </form>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-10">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10">
+      
+      <!-- Email Section -->
+      <div>
+        <h3 class="text-xl font-semibold text-white mb-2">Email</h3>
+        <p class="text-gray-400 hover:text-white transition duration-300">
+          <a href="mailto:mrkgitonga387@gmail.com">mrkgitonga387@gmail.com</a>
+        </p>
       </div>
   
-      <!-- Blog -->
-      <div class="text-center p-6 shadow-lg rounded-lg hover:shadow-xl transition">
-        <img src="images/Blog.png" alt="Blog" class="w-full h-40 object-cover rounded-md">
-        <h3 class="text-xl font-semibold mt-4">Blog</h3>
-        <p class="text-sm text-gray-600 mt-2">Decoding secrets, one post at a time.</p>
-      </div>
-  
-      <!-- Projects -->
-      <div class="text-center p-6 shadow-lg rounded-lg hover:shadow-xl transition">
-        <img src="images/Project.jpg" alt="Projects" class="w-full h-40 object-cover rounded-md">
-        <h3 class="text-xl font-semibold mt-4">Projects</h3>
-        <p class="text-sm text-gray-600 mt-2">Turning curiosity into creation and impact.</p>
-      </div>
-  
-      <!-- DevOps -->
-      <div class="text-center p-6 shadow-lg rounded-lg hover:shadow-xl transition">
-        <img src="images/devops.jpg" alt="DevOps" class="w-full h-40 object-cover rounded-md">
-        <h3 class="text-xl font-semibold mt-4">DevOps</h3>
-        <p class="text-sm text-gray-600 mt-2">Culture, speed, trust — delivered continuously.</p>
-      </div>
-  
-      <!-- Artificial Intelligence -->
-      <div class="text-center p-6 shadow-lg rounded-lg hover:shadow-xl transition">
-        <img src="images/ai.jpg" alt="AI" class="w-full h-40 object-cover rounded-md">
-        <h3 class="text-xl font-semibold mt-4">Artificial Intelligence</h3>
-        <p class="text-sm text-gray-600 mt-2">Teaching machines to dream and predict tomorrow.</p>
+      <!-- Social Media Section -->
+      <div>
+        <h3 class="text-xl font-semibold text-white mb-2">Social Media</h3>
+        <div class="flex space-x-6 mt-2 text-2xl">
+          <a href="https://medium.com/@I_0wn_y0u" target="_blank" aria-label="Medium">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 1043.63 592.71" class="w-6 h-6 text-gray-400 hover:text-white transition duration-300">
+              <g>
+                <circle cx="173.74" cy="296.35" r="175.67"/>
+                <ellipse cx="519.52" cy="296.35" rx="138.56" ry="175.67"/>
+                <ellipse cx="865.28" cy="296.35" rx="103.63" ry="175.67"/>
+              </g>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/mark-gitonga-02075326b/" target="_blank" class="text-gray-400 hover:text-blue-500 transition duration-300" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/Markg001" target="_blank" class="text-gray-400 hover:text-white transition duration-300" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://x.com/MarkGitonga20?s=08" target="_blank" aria-label="X (formerly Twitter)">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="currentColor" class="w-6 h-6 text-gray-400 hover:text-blue-400 transition duration-300">
+              <path d="M29.2,19.6h19.2l20.8,27.4L89.6,19.6h19.2L78.4,55.6l30.4,44.8H89.6L67.6,71.6l-23.2,28.8H25.6l32-39.2L29.2,19.6z"/>
+            </svg>
+          </a>
+          
+        </div>
       </div>
       
+  
+    <!-- Bottom Section -->
+    <div class="mt-10 text-center text-sm text-gray-500">
+      © 2025 Mark Gitonga. All rights reserved.
     </div>
-  </section>  
+  </footer>
 
 
   <!-- tsParticles Script -->
